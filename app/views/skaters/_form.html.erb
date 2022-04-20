@@ -22,6 +22,12 @@
   </div>
 
   <div>
+    <%= form.label :active, "Active", :value => "true", :checked =>true %>
+    <%= form.radio_button :active, true %>
+    <%= form.label :active, "Retired", :value => "false" %>
+    <%= form.radio_button :active, false %>    
+  </div>
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

@@ -65,6 +65,6 @@ class SkatersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def skater_params
-      params.require(:skater).permit(:first_name, :last_name)
+      params.require(:skater).permit(:first_name, :last_name, :active)
     end
 end
