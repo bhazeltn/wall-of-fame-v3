@@ -2,8 +2,8 @@
 
 <h1>Skaters</h1>
 
-<div id="skaters" class="container">
-  <% @skaters.in_groups_of(3, false).each do |group| %>
+<div id="skaters">
+  <% @skaters.in_groups_of(4, false).each do |group| %>
     <div class="row">
       <% group.each do |skater| %>
         <div class="col-md-3 col-lg-3">
